@@ -3,15 +3,17 @@ const mysql = require('mysql')
 
 const con = mysql.createConnection({
     host: "localhost",
-    user: "newton",
-    password: "password"
+    user: "root",
+    password: 'Password123#@!',
+    database: 'testcrud'
   });
   
 con.connect(function(err) {
-    if (err) throw err;
-    console.log("Connected!");
-    con.query("CREATE DATABASE testcrud", function (err, result) {
-      if (err) throw err;
-      console.log("Database created");
-    });
+  if(!!err) {
+    console.log(err);
+  } 
+  else {
+    console.log('Database connected')
+  }
+
 });

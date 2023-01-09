@@ -73,3 +73,27 @@ body {
     margin: 30px;
 }
 
+/*Table */
+
+#persons {
+    width: 75%;
+    border-collapse: collapse;
+}
+
+#persons td,#persons th {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+#persons tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#persons th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: black;
+    color: white;
+}
+
