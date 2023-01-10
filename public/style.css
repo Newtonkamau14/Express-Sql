@@ -76,6 +76,7 @@ body {
 /*Table */
 
 #persons {
+    margin-top: 30px;
     width: 75%;
     border-collapse: collapse;
 }
@@ -93,7 +94,42 @@ body {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
-    background-color: black;
+    background-color: #6c757d;
     color: white;
 }
 
+button.btn-edit {
+    background-color: #17a2b8;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+button.btn-delete {
+    background-color: #dc3545;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+button i {
+    margin-right: 5px;
+}
+
+a.btn-add {
+    border: none;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+a i {
+    margin-right: 5px;
+}

@@ -4,8 +4,8 @@ const personController = require('../controllers/personcontroller')
 
 router.route('/').get(personController.index)
 
-
-
+router.route('/add')
+            .get(personController.add)
 
 
 

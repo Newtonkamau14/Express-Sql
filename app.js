@@ -1,5 +1,6 @@
 require('dotenv').config()
 const express = require('express')
+const expressLayouts = require('express-ejs-layouts')
 const PORT = process.env.PORT
 const app = express()
 
@@ -11,7 +12,8 @@ app.use(express.urlencoded({
     extended : true
 }));
 app.use(express.static('public'))
-
+app.use(expressLayouts);
+app.set('layout','layouts/layout');
 
 
 

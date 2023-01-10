@@ -1,14 +1,14 @@
 const mysql = require('mysql')
 
 
-const con = mysql.createConnection({
+const connection = mysql.createConnection({
     host: "localhost",
     user: "root",
     password: 'Password123#@!',
     database: 'testcrud'
-  });
+});
   
-con.connect(function(err) {
+connection.connect(function(err) {
   if(!!err) {
     console.log(err);
   } 
@@ -17,3 +17,5 @@ con.connect(function(err) {
   }
 
 });
+
+module.exports = connection;
