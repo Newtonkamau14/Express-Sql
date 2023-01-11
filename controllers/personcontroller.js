@@ -19,10 +19,45 @@ exports.index = (req,res) => {
     });
 }
 
-exports.add = (req,res) => {
+exports.getAddPage = (req,res) => {
     res.render('addperson.ejs',{
         title: 'Add'
-    })
+    });
 }
 
+exports.add = (req,res) => {
+    let data = { lastname: req.body.lastname, firstname: req.body.firstname, address: req.body.address, city: req.body.city }
+    let sql = "INSERT INTO Persons SET ?";
+    let query = connection.query(sql, data,(err,persons) => {
+        if(err) throw err;
+        res.redirect('/');
+    });
 
+}
+
+exports.getEditPage = (req,res) => {
+    const personid = req.params.Personid;
+    let sql = `SELECT * FROM Persons WHERE Personid = ${personid}`;
+
+    let query = connection.query(sql,(err,person) => {
+        if(err) throw err;
+        res.render('editperson.ejs',{
+            title: 'Edit',
+            person: person[0]
+        })
+    });
+}
+
+exports.edit = (req,res) => {
+    let data = { lastname: req.body.lastname, firstname: req.body.firstname, address: req.body.address, city: req.body.city }
+    let sql = "UPDATE Persons SET ?";
+    
+    let query = connection.query(sql, data,(err,results) => {
+        if(err) throw err;
+        res.redirect('/');
+    });
+}
+
+exports.delete = (req,res) => {
+
+}

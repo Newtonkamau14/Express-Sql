@@ -5,12 +5,15 @@ const personController = require('../controllers/personcontroller')
 router.route('/').get(personController.index)
 
 router.route('/add')
-            .get(personController.add)
+            .get(personController.getAddPage)
+            .post(personController.add)
 
 
+router.route('/edit/:Personid').get(personController.getEditPage);
 
+//router.route('/edit').post(personController.edit);
 
-
+//router.route('/delete').delete(personController.delete)
 
 
 

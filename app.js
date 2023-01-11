@@ -9,7 +9,7 @@ const app = express()
 app.set('view engine','ejs');
 app.use(express.json())
 app.use(express.urlencoded({
-    extended : true
+    extended : false
 }));
 app.use(express.static('public'))
 app.use(expressLayouts);
@@ -18,12 +18,12 @@ app.set('layout','layouts/layout');
 
 
 //Routes
-app.use('/',require('./routes/persons'))
+app.use('/',require('./routes/persons'));
 
 
 
 
 //Start server
 app.listen(PORT,() => {
-    console.log(`Listening on ${PORT} at http://localhost:${PORT}`)
+    console.log(`Listening at http://localhost:${PORT}`)
 })

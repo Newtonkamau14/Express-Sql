@@ -14,14 +14,14 @@
         <tbody>
             <% persons.forEach((person) => { %>
             <tr>
-                    <td><%= person.PersonID %> </td>
-                    <td><%= person.LastName %> </td>
-                    <td><%= person.FirstName %> </td>
-                    <td><%= person.Address %> </td>
-                    <td><%= person.City %> </td>
+                    <td><%= person.Personid %> </td>
+                    <td><%= person.lastname %> </td>
+                    <td><%= person.firstname %> </td>
+                    <td><%= person.address %> </td>
+                    <td><%= person.city %> </td>
                     <td>
-                        <button class="btn-edit"><i class="fa-solid fa-pen-to-square"></i>Edit</button>
-                        <button class="btn-delete"><i class="fa-solid fa-trash-can"></i>Delete</button>
+                        <a href="/edit/<%= person.id %>" class="btn-edit"><i class="fa-solid fa-pen-to-square"></i>Edit</a>
+                        <a href="/delete" class="btn-delete"><i class="fa-solid fa-trash-can"></i>Delete</a>
                     </td>
             </tr>
             <%  })  %> 

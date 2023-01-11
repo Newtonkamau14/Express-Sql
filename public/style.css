@@ -83,7 +83,7 @@ body {
 
 #persons td,#persons th {
     border: 1px solid #ddd;
-    padding: 10px;
+    padding: 20px;
 }
 
 #persons tr:nth-child(even) {
@@ -98,22 +98,26 @@ body {
     color: white;
 }
 
-button.btn-edit {
+a.btn-edit {
     background-color: #17a2b8;
     border: none;
     border-radius: 4px;
     text-align: center;
     color: white;
     padding: 10px;
+    margin: 10px;
+    text-decoration: none;
 }
 
-button.btn-delete {
+a.btn-delete {
     background-color: #dc3545;
     border: none;
     border-radius: 4px;
     text-align: center;
     color: white;
     padding: 10px;
+    margin: 10px;
+    text-decoration: none;
 }
 
 button i {
@@ -132,4 +136,36 @@ a.btn-add {
 
 a i {
     margin-right: 5px;
+}
+
+form.add-person {
+    border: none;
+    background-color:#f2f2f2;;
+    border-radius: 5px;
+    padding: 30px;
+    width: 50%;
+}
+
+form.add-person input {
+    border: 1px solid;
+    border-radius: 4px;
+    width: 50%;
+    margin: 20px 0px;
+    padding: 10px;
+    display: flex;
+}
+
+
+form.add-person button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: white;
+}
+
+form.add-person button:hover {
+    padding: 15px 25px;
+    transition: 0.3ms ease-in-out;
+    text-decoration: underline;
 }
