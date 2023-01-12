@@ -1,6 +1,7 @@
 <div class="main">
-    <form action="/edit" method="post" class="add-person">
-        
+    <form action="/edit?_method=PUT" method="post" class="form-person">
+        <input type="hidden" name="id" value="<%= person.id %> ">
+
         <label for="lastname">Last Name</label>
         <input type="text" name="lastname" placeholder="LastName" value="<%= person.lastname %> ">
 

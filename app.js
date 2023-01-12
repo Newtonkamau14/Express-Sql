@@ -1,6 +1,7 @@
 require('dotenv').config()
 const express = require('express')
 const expressLayouts = require('express-ejs-layouts')
+const methodOverride = require('method-override')
 const PORT = process.env.PORT
 const app = express()
 
@@ -14,7 +15,7 @@ app.use(express.urlencoded({
 app.use(express.static('public'))
 app.use(expressLayouts);
 app.set('layout','layouts/layout');
-
+app.use(methodOverride('_method'))
 
 
 //Routes

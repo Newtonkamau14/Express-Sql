@@ -98,7 +98,7 @@ body {
     color: white;
 }
 
-a.btn-edit {
+.btn-edit {
     background-color: #17a2b8;
     border: none;
     border-radius: 4px;
@@ -109,7 +109,7 @@ a.btn-edit {
     text-decoration: none;
 }
 
-a.btn-delete {
+.btn-delete {
     background-color: #dc3545;
     border: none;
     border-radius: 4px;
@@ -124,7 +124,7 @@ button i {
     margin-right: 5px;
 }
 
-a.btn-add {
+.btn-add {
     border: none;
     background-color: #007bff;
     color: white;
@@ -138,7 +138,7 @@ a i {
     margin-right: 5px;
 }
 
-form.add-person {
+.form-person {
     border: none;
     background-color:#f2f2f2;;
     border-radius: 5px;
@@ -146,7 +146,7 @@ form.add-person {
     width: 50%;
 }
 
-form.add-person input {
+.form-person input {
     border: 1px solid;
     border-radius: 4px;
     width: 50%;
@@ -156,7 +156,7 @@ form.add-person input {
 }
 
 
-form.add-person button {
+.form-person button {
     padding: 10px 20px;
     background-color: #007bff;
     border: none;
@@ -164,8 +164,9 @@ form.add-person button {
     color: white;
 }
 
-form.add-person button:hover {
+.form-person button:hover {
     padding: 15px 25px;
     transition: 0.3ms ease-in-out;
     text-decoration: underline;
 }
+
