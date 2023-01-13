@@ -22,7 +22,7 @@ INSERT INTO Persons
             ('Hardy', 'Thomas', '12209','Berlin'),
             ('Moos','Hanna','68306','Mannheim'),
             ('Lincoln','Elizabeth','T2F 8M4','Tsawassen'),
-           /('Roulet','Annette','31000','Toulouse'),
+            ('Roulet','Annette','31000','Toulouse'),
             ('Bertand','MArie','75012','Paris'),
             ('Pipps','Georg','5020','Salzburg'),
             ('Castro','ISabel','1756','Lisboa'),
@@ -33,10 +33,10 @@ INSERT INTO Persons
             ('Moroni','Maurizio','42100','Reggio'),
             ('Kunar','Hari','OX15 4NB','London'),
             ('Jytte','Petersen','1934','Kobenhavn'),
-            ('Ibsen','','',''),
-            ('','','',''),
-            ('','','',''),
-            ('','','',''),
+            ('Ibsen','Palle','8200','Arhus'),
+            ('Muller','Rita','70563','Stuutgart'),
+            ('Paula','Parente','08737-363','Resende'),
+            ('Karl','Jablonski','98128','Seattle');
 
 
         
