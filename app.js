@@ -2,7 +2,7 @@ require('dotenv').config()
 const express = require('express')
 const expressLayouts = require('express-ejs-layouts')
 const methodOverride = require('method-override')
-const PORT = process.env.PORT
+const PORT = process.env.PORT || 5000;
 const app = express()
 
 
@@ -28,3 +28,5 @@ app.use('/',require('./routes/persons'));
 app.listen(PORT,() => {
     console.log(`Listening at http://localhost:${PORT}`)
 })
+
+module.exports = app;
