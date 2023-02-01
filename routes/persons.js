@@ -15,4 +15,6 @@ router.route('/edit').put(personController.edit);
 
 router.route('/delete/:id').get(personController.delete);
 
+router.route('/search').get(personController.search)
+
 module.exports = router;

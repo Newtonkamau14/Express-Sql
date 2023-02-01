@@ -15,7 +15,7 @@ app.use(express.urlencoded({
 app.use(express.static('public'))
 app.use(expressLayouts);
 app.set('layout','layouts/layout');
-app.use(methodOverride('_method'))
+app.use(methodOverride('_method'));
 
 
 //Routes

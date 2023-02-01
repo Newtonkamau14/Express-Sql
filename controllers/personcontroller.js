@@ -70,3 +70,16 @@ exports.delete = (req,res) => {
         res.redirect('/');
     })
 }
+
+exports.search = (req,res) => {
+    const search = req.query.search;
+    let sql = `SELECT * FROM Persons WHERE lastname LIKE '%${search}%' OR firstname LIKE '%${search}%'`;
+    let query = connection.query(sql,(err,persons) => {
+        if(err) throw err;
+
+        res.render('index.ejs',{
+            title: 'Home',
+            persons: persons,
+        });
+    })
+}
