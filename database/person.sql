@@ -5,11 +5,12 @@ USE testcrud;
 DROP TABLE IF EXISTS Persons;
 
 CREATE TABLE Persons (
-    id INT AUTO_INCREMENT PRIMARY KEY,
+    id INT NOT NULL AUTO_INCREMENT ,
     lastname VARCHAR(255),
     firstname VARCHAR(255),
     address VARCHAR(255),
-    city VARCHAR(255)
+    city VARCHAR(255),
+    PRIMARY KEY ( id )
 );
 
 SHOW TABLES;
