@@ -27,10 +27,5 @@ app.use("/", personRouter);
 //Start server
 app.listen(PORT, () => {
   console.log(`Listening at http://localhost:${PORT}`);
-  console.log(process.env.HOST,
-   process.env.DBUSER,
-     process.env.PASSWORD,
-    process.env.DATABASE)
-});
 
 export default app;
